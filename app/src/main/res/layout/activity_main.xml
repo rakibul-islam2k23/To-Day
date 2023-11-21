@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F4F7">
+
+        <RelativeLayout
+            android:id="@+id/topArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/signalImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:padding="@dimen/_30sdp"
+                android:src="@drawable/signal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signalImage"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/signalImage"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:letterSpacing="0.04"
+                    android:text="Hello ."
+                    android:textColor="#2D54EE"
+                    android:textSize="@dimen/_22sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/signalImage"
+                    android:layout_marginTop="-10dp"
+                    android:fontFamily="@font/light"
+                    android:gravity="center"
+                    android:letterSpacing="0.04"
+                    android:text="Know yourself better"
+                    android:textColor="#CC2D54EE"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <ImageView
+                android:id="@+id/shapeImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bottom_shape" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_below="@+id/shapeImage"
+                android:background="#07193F"
+                android:paddingBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:layout_marginTop="-5dp"
+                >
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_button"
+                    android:fontFamily="@font/medium"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:letterSpacing="0.07"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="Log In"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/signUp"
+                    android:layout_below="@+id/login"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/register_button"
+                    android:fontFamily="@font/medium"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:letterSpacing="0.07"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="Sign Up"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="#2D54EE"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
